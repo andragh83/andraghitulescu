@@ -66,7 +66,7 @@ const LogoLink = styled.div`
 
 const NavBar = ({ children }) => {
 
-    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+    const [viewportWidth, setViewportWidth] = useState(undefined);
     
     const handleResize = () => {
         setViewportWidth(window.innerWidth);
