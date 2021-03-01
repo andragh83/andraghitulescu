@@ -14,7 +14,7 @@ const Photo = styled.div`
         border-radius: 25px;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
         width: ${({ width }) => width};;
-        @media only screen and (max-width: 400px) {
+        @media only screen and (max-width: 420px) {
             width: ${({ width }) => width*2/3};;
         }
     }

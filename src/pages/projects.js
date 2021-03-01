@@ -26,7 +26,7 @@ const Container = styled.div`
         
         }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 420px) {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));         
         }
 

@@ -53,7 +53,7 @@ const Header = styled.div`
         width: 300px;
       }
 
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         width: 270px;
             }
 `
@@ -71,7 +71,7 @@ const FormContainer = styled.div`
   @media (max-width: 768px) {
         width: 350px;
       }
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
         width: 270px;
             }
 
@@ -93,7 +93,7 @@ const FormContainer = styled.div`
             font-size: .8rem;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
         width: 250px;
             }
     }

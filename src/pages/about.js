@@ -26,7 +26,7 @@ const Container = styled.div`
         margin: 0px auto;
         }
 
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
         margin: 0px auto;
         }
 
@@ -64,7 +64,7 @@ const Container = styled.div`
             height: 220px;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
                 width: 90vw;
                 height: 95vw;
                 position: relative;
@@ -96,7 +96,7 @@ const Container = styled.div`
                 margin-right: 30px;
             }
 
-            @media (max-width: 400px) {
+            @media (max-width: 420px) {
                 margin: 10px;
                 padding: 10px;
                 padding-left: 10px;                
@@ -111,7 +111,7 @@ const Container = styled.div`
         @media (max-width: 768px) {
             padding-left: 3rem;
             }
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
             padding-left: inherit;
             }
     }

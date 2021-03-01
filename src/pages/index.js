@@ -16,7 +16,7 @@ const BaseContainer = styled.div`
         height: 85vh;
       }
 
-  @media (max-width: 400px) {
+  @media (max-width: 420px) {
         height: 83vh;
       }
 
@@ -30,7 +30,7 @@ const BaseContainer = styled.div`
           font-size: 10em;
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
           font-size: 5em;
         }
     }
