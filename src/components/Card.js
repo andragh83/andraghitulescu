@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import styled from 'styled-components';
 import { colors } from '../styles/colors';
 import { logos } from '../data/logos';
@@ -9,24 +8,26 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 10px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
     
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     }
 
     .photoDesktop {
         cursor: pointer;
-        width: 450px;
+        width: 500px;
         margin: 0px auto;
         margin-top: 10px;
         border-radius: 10px;
         align-self: center;
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
-        
-        @media (max-width: 768px) {
-            width: 250px;
+        ${'' /* box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5); */}
+
+        @media (max-width: 1100px) {
+            width: 300px;
         }
 
     }
@@ -39,26 +40,22 @@ const Container = styled.div`
         background-color: rgb(59,23,61);
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 30px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
-        @media (max-width: 768px) {
+        @media (max-width: 1100px) {
             width: 50px;
-            margin-left: 250px;
+            margin-left: 280px;
             margin-top: -140px;
         }
     }
 
     .cardText {
-        ${'' /* padding: 20px; */}
         border-radius: 10px;
-        ${'' /* box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
-        background-color: rgba(255, 255, 255, .25);  
-        backdrop-filter: blur(20px); */}
         margin: 0px;
-        ${'' /* margin-left: 10px; */}
-        width: 450px;
+        width: 80%;
         height: auto;
-        @media (max-width: 768px) {
+        margin-bottom: 20px;
+        @media (max-width: 1100px) {
             margin: 10px 10px;
-            width: 250px;
+            ${'' /* width: 280px; */}
         }
     }
 
@@ -69,22 +66,27 @@ const Container = styled.div`
     }
     
     h3 {
-        margin-top: 10px;
-        margin-bottom: 10px;        
-        padding: 20px;
+        margin-top: 55px;
+        margin-bottom: 30px;        
         padding-top: 40px;
         color: ${colors.defaultColor};
-        background: linear-gradient(rgba(0,0,0,0), ${colors.darkPurple}, ${colors.darkPurple});
-        @media (max-width: 768px) {
-            text-align: center;
-            padding: 20px;
+        line-height: 1.7rem;
+        @media (max-width: 1100px) {
+            margin-top: 25px;
+            margin-bottom: 20px; 
+            ${'' /* text-align: center; */}
+            ${'' /* padding: 20px; */}
         }
     }
 
     .buttonsSection {
         margin-top: 2rem;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+
+        ${'' /* @media (max-width: 420px) {
+            justify-content: space-between;
+        } */}
     }
 
     button {
@@ -96,8 +98,12 @@ const Container = styled.div`
         font-size: 1.2rem;
         cursor: pointer;
         outline: none;
-        @media (max-width: 768px) {
+        @media (max-width: 1100px) {
             font-size: .8rem;
+        }
+
+        @media (max-width: 420px) {
+            padding: 7.5px 15px;
         }
     }
 
@@ -105,7 +111,6 @@ const Container = styled.div`
         border-color: transparent;
         border-bottom: 1px solid ${colors.defaultColor};
         border-radius: 0px;
-        ${'' /* margin-right: 30px; */}
     }
 
     .details {
@@ -114,7 +119,7 @@ const Container = styled.div`
 
 `
 
-const Card = ({ name, photoDesktop, photoMobile, technologies, children, github, live, seconds, onClick }) => {    
+const Card = ({ name, photoDesktop, photoMobile, technologies, github, live, seconds, onClick }) => {    
     return(
         <Container seconds={seconds}>
             <img alt='prtScrDesk' className='photoDesktop' src={photoDesktop} onClick={onClick}/>
@@ -127,9 +132,6 @@ const Card = ({ name, photoDesktop, photoMobile, technologies, children, github,
                                     : <img key = {index} src={technology.icon} height='35px' alt=''/>
                     )}
                 </div>
-                <div>
-                    {children}
-                </div>
                 <div className='buttonsSection'>                   
                     <button onClick={onClick} className="button details grow" href={github}>
                         Details
@@ -137,7 +139,7 @@ const Card = ({ name, photoDesktop, photoMobile, technologies, children, github,
                     </button>
                      
                     <a href={github} target='_blank' rel="noreferrer">
-                        <button className="button code grow" href={github}>
+                        <button className="button code grow">
                             Code
                             {" "}<FontAwesomeIcon icon={logos.github} size="1x"/>
                         </button>

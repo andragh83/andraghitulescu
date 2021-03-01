@@ -15,8 +15,11 @@ const Container = styled.div`
         @media (max-width: 768px) {
             width: auto;
             margin: 0px 20px;
-            border-color: transparent;
             }
+
+        @media (max-width: 420px) {
+            box-shadow: none
+        }
     
     h1, h4 {
         font-weight: 300;
@@ -25,32 +28,35 @@ const Container = styled.div`
     h1 {
         line-height: 1.2em;
         @media (max-width: 420px) {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             }
     }
 
-    h4, h3 {
+    h3 {
         @media (max-width: 420px) {
-            font-size: 1rem;
+            font-size: 1rem;            
             }
+    }
+
+    h4 {
+        @media (max-width: 420px) {
+            margin-top: -5px;
+            margin-bottom: 0px;
+            font-size: .8rem;
+        }
     }
     
     .header {
         padding: 5px 20px;  
         margin-right: 20px;  
         margin-left: 20px;
-        border-radius: 15px;
-        ${'' /* box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
-        background-color: rgba(255, 255, 255, .25);  
-        backdrop-filter: blur(5px); */}
+        border-radius: 15px;       
         border: 1px solid ${colors.green};
 
         @media (max-width: 420px) {
             margin: 0px;        
             padding: 0px;      
-            box-shadow: none;
-            background-color: transparent;  
-            backdrop-filter: none;
+            border-color: transparent;
             }
 
     }

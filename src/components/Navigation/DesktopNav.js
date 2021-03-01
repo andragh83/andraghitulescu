@@ -62,7 +62,7 @@ const DesktopNav = () => {
             <ul>
                 <LinkList to='/about'>About</LinkList>   
                 <LinkList to='/projects'>Projects</LinkList>
-                <LinkList to='/learnLog'>Learning Log</LinkList>
+                <LinkList to='/codingLog'>Coding Log</LinkList>
                 <LinkList to='/contact'>Contact</LinkList>
             </ul>
             </LinksContainer> 

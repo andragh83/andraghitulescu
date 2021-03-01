@@ -47,11 +47,8 @@ const projectsArray = [
             }
             ],
             github: '#',
-            live: '#',
+            live: '#',            
             text: <div>
-                <p>Website built with Gatsby and GraphQL</p>
-            </div>,
-            details: <div>
             <p>It was time to build a serious portfolio site and I wanted to do this by also learning something new.</p>
             <p>I did the tutorial in the Gatsby official documentation and then I began this project.</p>
             <p>Gatsby it's awesome!</p>

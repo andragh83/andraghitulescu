@@ -21,10 +21,14 @@ const LinksContainer = styled.div`
     z-index: 10;  
     animation: 1s showMenu both;
     opacity: 0;
+
     }
 
     ul {
         list-style: none;
+        @media (max-width: 420px) {
+            margin-top: 0px;
+        }       
     }
 
     li {
@@ -37,7 +41,7 @@ const LinksContainer = styled.div`
     li a {
         text-decoration: none;
         color: ${colors.blue};
-        @media only screen and (max-width: 400) {
+        @media only screen and (max-width: 420) {
             font-size: 1.5rem;
         }
     }
@@ -136,7 +140,7 @@ const MobileNav = () => {
                     <ul>
                         <LinkList to='/about'>About</LinkList>   
                         <LinkList to='/projects'>Projects</LinkList>
-                        <LinkList to='/learnLog'>Learning Log</LinkList>
+                        <LinkList to='/codingLog'>Coding Log</LinkList>
                         <LinkList to='/contact/'>Contact</LinkList>
                     </ul>
                 </LinksContainer> : <div></div>

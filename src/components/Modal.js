@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { colors } from '../styles/colors';
 import { logos } from '../data/logos';
 
+
 const Container = styled.div`
     margin-top: -75px;
     display: flex;
@@ -28,7 +29,7 @@ const Container = styled.div`
         align-self: center;        
         
         @media (max-width: 768px) {
-            height: 300px;
+            height: 250px;
         }
     }
     
@@ -41,7 +42,12 @@ const Container = styled.div`
         font-weight: 400;
         @media (max-width: 768px) {
             margin: 10px 10px;
-            width: 250px;
+            width: 280px;
+        }
+
+        @media (max-width: 420px) {
+            margin: 0px;
+            width: 280px;
         }
     }
 
@@ -62,13 +68,12 @@ const Container = styled.div`
             text-align: center;
             padding: 20px;
         }
-    }
 
-    .code {
-        border-color: transparent;
-        border-bottom: 1px solid ${colors.defaultColor};
-        border-radius: 0px;
-        margin-right: 30px;
+        @media (max-width: 768px) {
+            text-align: center;
+            margin-top: 0px;
+            padding: 5px;
+        }
     }
 
     .closeModal {
@@ -88,9 +93,43 @@ const Container = styled.div`
             margin-left: 80%;
         }
     }
+
+    .buttonsSection {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0px;
+        margin-bottom: 20px;
+
+        @media only screen and (max-width: 420px) {
+            
+            margin-bottom: 10px;
+        }
+    }
+
+    button {
+        padding: 10px 20px;
+        border: 1px solid ${colors.fuchsia};
+        border-radius: 10px;
+        background-color: transparent;
+        color: ${colors.darkPurple};
+        font-size: 1.2rem;
+        cursor: pointer;
+        outline: none;
+        @media (max-width: 768px) {
+            font-size: .8rem;
+        }
+    }
+
+    .code {
+        border-color: transparent;
+        border-bottom: 1px solid ${colors.blue};
+        border-radius: 0px;
+        margin-right: 30px;
+    }
 `
 
-const Modal = ({ name, photo, technologies, closeModal, children }) => {        
+const Modal = ({ name, photo, technologies, closeModal, children, github, live }) => {        
     return(
         <Container photo={photo}>
             <button className='closeModal' onClick={closeModal}>
@@ -108,7 +147,21 @@ const Modal = ({ name, photo, technologies, closeModal, children }) => {
                 <div>
                     {children}
                 </div>                
-            </div>            
+            </div>
+            <div className='buttonsSection'>                                                        
+                    <a href={github} target='_blank' rel="noreferrer">
+                        <button className="button code grow">
+                            Code
+                            {" "}<FontAwesomeIcon icon={logos.github} size="1x"/>
+                        </button>
+                    </a>                
+                    <a href={live} target='_blank' rel="noreferrer">
+                        <button className="button live grow">
+                            Demo
+                            {" "}<FontAwesomeIcon icon={logos.live} size="1x"/>
+                        </button>
+                    </a>
+                </div>            
         </Container>
     )
 }

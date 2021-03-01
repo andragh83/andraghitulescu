@@ -3,11 +3,8 @@ import Layout from '../components/Layout';
 import Card from '../components/Card';
 import Modal from '../components/Modal';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import projectsArray from '../data/projectsData';
 import FadeIn from 'react-fade-in';
-import { colors } from '../styles/colors';
-import { logos } from '../data/logos';
 
 
 const Container = styled.div`
@@ -17,8 +14,8 @@ const Container = styled.div`
     grid-gap: 45px;
 
     @media only screen and (max-width: 1024px) {
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        grid-gap: 10px; 
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        grid-gap: 30px; 
         }
 
     @media only screen and (max-width: 768px) {
@@ -48,6 +45,12 @@ const Container = styled.div`
             bottom: 1rem;
             left: 5%;
             width: 380px;
+        }
+
+        @media only screen and (max-width: 375px) {
+            bottom: 1rem;
+            left: 5%;
+            width: 350px;
         }
 
     }
@@ -85,8 +88,7 @@ const Projects = () => {
                                     github={project.github}
                                     live={project.live}
                                     onClick={() => onClick(index)}
-                                    >
-                                        {project.text}
+                                    >                                        
                                 </Card>                        
                             </FadeIn>
                 }
@@ -102,7 +104,7 @@ const Projects = () => {
                         live={projectsArray[projectClicked].live}
                         closeModal={onClick}
                     >
-                        {projectsArray[projectClicked].details}
+                        {projectsArray[projectClicked].text}
                     </Modal>                     
                 </div> : <div></div>
                                  }
