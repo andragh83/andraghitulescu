@@ -24,7 +24,7 @@ const Container = styled.div`
         margin-top: 10px;
         border-radius: 10px;
         align-self: center;
-        ${'' /* box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5); */}
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 0px 20px rgba(0, 0, 0, 0.5);
 
         @media (max-width: 1100px) {
             width: 300px;
