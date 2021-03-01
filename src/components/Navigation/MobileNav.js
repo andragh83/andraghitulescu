@@ -27,7 +27,7 @@ const LinksContainer = styled.div`
     ul {
         list-style: none;
         @media (max-width: 420px) {
-            margin-top: 0px;
+            margin-top: -20px;
         }       
     }
 
@@ -84,7 +84,7 @@ const Button = styled.div`
         }
 
     @media only screen and (max-width: 420px) {
-            margin-top: -30px;
+            margin-top: -10px;
             right: 50px;
             
         }
