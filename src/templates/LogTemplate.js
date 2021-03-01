@@ -11,11 +11,6 @@ const Container = styled.div`
     padding: 20px;
     border-radius: 25px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
-    ${'' /* border: 1px solid ${colors.green}; */}
-    
-    ${'' /* box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(-45deg, rgba(255,255,255,0.2), rgba(255, 255, 255, 0.3)); */}
-
     
         @media (max-width: 768px) {
             width: auto;
@@ -28,13 +23,14 @@ const Container = styled.div`
     }
 
     h1 {
-        @media (max-width: 400px) {
+        line-height: 1.2em;
+        @media (max-width: 420px) {
             font-size: 1.5rem;
             }
     }
 
     h4, h3 {
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
             font-size: 1rem;
             }
     }
@@ -49,7 +45,7 @@ const Container = styled.div`
         backdrop-filter: blur(5px); */}
         border: 1px solid ${colors.green};
 
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
             margin: 0px;        
             padding: 0px;      
             box-shadow: none;
@@ -66,7 +62,7 @@ const Container = styled.div`
         border-radius: 15px;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
         
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
             margin: 0px; 
             padding: 0px;           
             box-shadow: none;

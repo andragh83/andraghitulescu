@@ -23,6 +23,11 @@ const Container = styled.div`
         padding: 20px;
         border: 1px solid ${colors.blue};
         border-radius: 15px;
+
+        @media (max-width: 420px) {
+            margin: 20px;
+            }
+
     }
 `
 
@@ -39,22 +44,13 @@ const Header = styled.div`
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
-    ${'' /* opacity: 0;
-    animation: .5s fullOpacity both;
-    animation-delay: .5s;
-
-    @keyframes fullOpacity {
-    100% {
-      opacity: 1;
-      }
-    } */}
 
     @media (max-width: 768px) {
         width: 300px;
       }
 
       @media (max-width: 420px) {
-        width: 270px;
+        width: 250px;
             }
 `
 
@@ -135,7 +131,7 @@ const FormContainer = styled.div`
         justify-content: space-around;
         width: 300px;
         margin: 40px auto;
-        @media (max-width: 400px) {
+        @media (max-width: 420px) {
             width: 200px;
             margin: 20px auto;
             }

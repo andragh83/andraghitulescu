@@ -83,6 +83,10 @@ const Container = styled.div`
         margin-top: 70px;
         color: #000;
         opacity: .5;
+
+        @media only screen and (max-width: 420px) {
+            margin-left: 80%;
+        }
     }
 `
 
