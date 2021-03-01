@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    /* background: url("../images/milkyway.jpg") no-repeat center center fixed; */
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+
+body {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    /* background: linear-gradient(-45deg, rgba(1, 139, 143, 0.7), rgba(42, 32, 242, .8), rgba(255, 0, 212, 0.8)); */
+    background-color: #39153b;
+    /* background-color:  rgb(26, 0, 57); */
+    /* height: 100vh; */
+    color: #ccc;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: 'Julius Sans One', sans-serif;
+
+}
+
+h2 {
+    font-size: 38px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h3 {
+    font-size: 28px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    
+    h1 {
+        font-size: 34px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    h3 {
+        font-size: 23px;
+    }
+    
+    h4 {
+        font-size: 19px;
+    }
+}
