@@ -20,6 +20,10 @@ const BaseContainer = styled.div`
         height: 83vh;
       }
 
+  @media (max-width: 375px) {
+        height: 75vh;
+      }
+
   .logoApear {
         font-family: 'Julius Sans One', sans-serif;
         font-size: 17em;
