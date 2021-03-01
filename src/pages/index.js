@@ -17,10 +17,6 @@ const BaseContainer = styled.div`
       }
 
   @media (max-width: 420px) {
-        height: 83vh;
-      }
-
-  @media (max-width: 375px) {
         height: 75vh;
       }
 
