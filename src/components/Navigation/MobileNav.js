@@ -54,8 +54,9 @@ const LinksContainer = styled.div`
 
     .active {
         ${'' /* opacity: 1; */}
-        border: 2px solid ${colors.green};
+        border: 1px solid ${colors.green};
         padding: 2px 5px;
+        border-radius: 5px;
         ${'' /* border-radius: 60% 60% 30% 50%; */}
     }
 
