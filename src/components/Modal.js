@@ -30,7 +30,6 @@ const Container = styled.div`
         @media (max-width: 768px) {
             height: 300px;
         }
-
     }
     
     .cardText {

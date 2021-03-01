@@ -45,7 +45,7 @@ const LogoLink = styled.div`
         
         margin-top: 2rem;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
         margin-left: 10px;
         margin-top: 10px;
     }
@@ -67,7 +67,7 @@ const LogoLink = styled.div`
 const NavBar = ({ children }) => {
 
     const [viewportWidth, setViewportWidth] = useState(undefined);
-    
+
     
     const handleResize = () => {
         setViewportWidth(window.innerWidth);

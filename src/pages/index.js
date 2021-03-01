@@ -70,7 +70,7 @@ const Container = styled.div`
         font-size: 5em;
       }
 
-      @media (max-width: 400px) {
+      @media (max-width: 420px) {
         font-size: 2em;
       }
 
@@ -110,7 +110,7 @@ const Container = styled.div`
     color: inherit;
     animation: hideaway 2s both;
     animation-delay: 1s;
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
         font-size: 2em;
       }
   }
@@ -125,7 +125,7 @@ const Container = styled.div`
   .jobtitle {
     font-size: 2rem;
     margin: 10px auto;
-    @media (max-width: 400px) {
+    @media (max-width: 420px) {
       font-size: 1.5rem;
       }
   }

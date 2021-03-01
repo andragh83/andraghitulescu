@@ -16,7 +16,8 @@ const LinksContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(57, 21, 59, .8); 
+    background-color: rgba(57, 21, 59, .35); 
+    backdrop-filter: blur(25px);
     z-index: 10;  
     animation: 1s showMenu both;
     opacity: 0;

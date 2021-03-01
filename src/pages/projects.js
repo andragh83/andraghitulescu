@@ -42,7 +42,14 @@ const Container = styled.div`
         border-radius: 15px;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
         background-color: rgba(255, 255, 255, .35);  
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(25px);
+
+        @media only screen and (max-width: 420px) {
+            bottom: 1rem;
+            left: 3%;
+            width: 350px;
+        }
+
     }
 `
 
