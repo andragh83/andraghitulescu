@@ -68,6 +68,7 @@ const NavBar = ({ children }) => {
 
     const [viewportWidth, setViewportWidth] = useState(undefined);
     
+    
     const handleResize = () => {
         setViewportWidth(window.innerWidth);
     }
