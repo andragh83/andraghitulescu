@@ -153,6 +153,8 @@ const Contact = () => {
                             <p><FontAwesomeIcon icon={logos.phone} size="lg"/>{"  "}<FontAwesomeIcon icon={logos.whatsapp} size="lg"/>{"  "}+40 725 987 214{"  "}(RO)</p>
                         </div>                
                         <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+                            <input type="hidden" name="bot-field" />
+                            <input type="hidden" name="form-name" value="contact" />
                             <label>
                                 <p><FontAwesomeIcon icon={logos.user} size="1x"/>{"  "}Name</p>
                                 <input type="text" name="name" id="name" />
