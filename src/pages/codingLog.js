@@ -141,7 +141,8 @@ const LearnLog = ({ data }) => {
                     <div className="facts">
                         <div className="description">
                         <h1>Welcome to my Coding Log</h1>
-                        <p>This is bla bla bla bla</p>
+                        <p>I included this page to make sure no day passes without me coding and getting one step closer
+                        to reaching my goal, that is to get a web developer full time job. </p>
                         {data.allMarkdownRemark.edges.map(({ node }) => ( 
                             <div key={node.id} className="posts">
                             <Link to={node.fields.slug}>

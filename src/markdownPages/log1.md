@@ -1,13 +1,10 @@
 ---
 slug: "/log/my-first-log"
-date: "2019-05-04"
-title: "My first log is today that I need more text!! Oh dear!!"
+date: "2021-03-02"
+title: "First day of the GatsbyConf 2021"
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+I am really excited! I built this website using Gatsby and GraphQL and it's a really neat React library to worked with! And it's going places! More and more people are starting to use it and I intend to get better at it with each day.
 
-<h3>What is Lorem Ipsum?</h3>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-<h3>Why do we use it?</h3>
-<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+<p>Will update this post later, after I've attended some presentations.</p>
+<p>Also, in the mean time, I'll update my website too and add it to my linkedIn profile because I think it's about time I do that, even though I'll keep improving it and adding content. No day without coding, right?!</p>

@@ -62,11 +62,7 @@ const Container = styled.div`
     }
 
     .logContent {
-        padding: 30px; 
-        padding-top: 70px;
-        ${'' /* margin-top: -50px; */}
-        border-radius: 15px;
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
+        padding: 30px;     
         
         @media (max-width: 420px) {
             margin: 0px; 
@@ -91,7 +87,7 @@ const LogTemplate = ({ data }) => {
                         <h4>- {log.frontmatter.date} -</h4>
                     </div>
                     <div
-                        // className="logContent"
+                        className="logContent"
                         dangerouslySetInnerHTML={{ __html: log.html }}
                         />
                 </Container>

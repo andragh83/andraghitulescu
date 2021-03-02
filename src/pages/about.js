@@ -134,6 +134,7 @@ const Container = styled.div`
     .logo img {
         height: 45px;
         margin-top: 4px;
+        padding-right: 5px;
     }
 
     .name {
@@ -248,25 +249,25 @@ const About = () => {
                                     <div className="logo">                                    
                                         <img alt='' src={logos.ps} />
                                     </div>
-                                    <p className="name">HTML</p>
+                                    <p className="name">Adobe Photoshop</p>
                                 </div>
                                 <div className="techStack">
                                     <div className="logo">
                                         <img alt='' src={logos.ai} />
                                     </div>
-                                    <p className="name">CSS</p>
+                                    <p className="name">Adobe Illustrator</p>
                                 </div>
                                 <div className="techStack">
                                     <div className="logo">
                                         <img alt='' src={logos.id} />
                                     </div>
-                                    <p className="name">JavaScript</p>
+                                    <p className="name">Adobe InDesign</p>
                                 </div>
                                 <div className="techStack">
                                     <div className="logo">
                                         <img alt='' src={logos.figma} />
                                     </div>
-                                    <p className="name">React</p>
+                                    <p className="name">Figma</p>
                                 </div>                    
                             </div>
                             <h3>Outside work</h3>
