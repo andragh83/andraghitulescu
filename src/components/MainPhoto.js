@@ -3,14 +3,13 @@ import styled from 'styled-components';
 
 const Photo = styled.div`
     float: left;
-	padding: 1rem 1rem 0 1rem;
-	${'' /* background: transparent; */}
+	padding: 1rem 1rem 0 1rem;	
 	position: relative;
     transform: ${({ rotation }) => rotation};
-    text-align: center;
-    ${'' /* height: 100%; */}
+    text-align: center;    
 
-    img {
+
+    img {        
         border-radius: 25px;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
         width: ${({ width }) => width};;

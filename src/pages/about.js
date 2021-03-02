@@ -44,18 +44,12 @@ const Container = styled.div`
     }
 
     .photo {
-        ${'' /* position: -webkit-sticky; 
-        position: sticky; */}
         width: 400px;
         height: 450px;
-        z-index: 500;
-        ${'' /* border: 1px solid ${colors.blue}; */}
+        z-index: 500;        
         background-color:  ${colors.darkPurple};
-        border-radius: 2rem;
-        ${'' /* overflow: auto; */}
-        padding-bottom: 0px;
-        ${'' /* animation: 1s fullOpacity both;
-        opacity: 0; */}
+        border-radius: 2rem;        
+        padding-bottom: 0px;        
 
         @media (max-width: 768px) {
             top: 8rem;
@@ -83,9 +77,7 @@ const Container = styled.div`
         margin-top: -350px;
         padding: 30px;
         padding-top: 5px;
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
-        ${'' /* background-color: rgba(255, 255, 255, .15);  
-        backdrop-filter: blur(5px); */}
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);        
         border-radius: 25px;
         margin-left: 18rem;
 
