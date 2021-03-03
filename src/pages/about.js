@@ -114,12 +114,10 @@ const Container = styled.div`
         grid-gap: 20px;
     }
 
-    .techStack {
-        ${'' /* border: 1px solid transparent; */}
+    .techStack {        
         border-radius: .7rem;
         display: flex;
-        justify-content: flex-start;
-        ${'' /* padding: 5px 10px; */}
+        justify-content: flex-start;        
         padding: 0px 0px;
     }
 

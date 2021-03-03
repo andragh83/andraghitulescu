@@ -119,8 +119,13 @@ const Container = styled.div`
             line-height: 1.2rem;          
             }
     }
-    .date {
+    
+    .log {
         color: ${colors.green};
+    }
+
+    .date {
+        font-size: 1.2rem;
     }
     
 `
@@ -140,15 +145,16 @@ const LearnLog = ({ data }) => {
                     </div>                
                     <div className="facts">
                         <div className="description">
-                        <h1>Welcome to my Coding Log</h1>
+                        <h1>Welcome to my <span className="log">Coding Log</span></h1>
                         <p>I included this page to make sure no day passes without me coding and getting one step closer
-                        to reaching my goal, that is to get a web developer full time job. </p>
+                        to reaching my goal, that is to get a web developer full time job.</p>
                         {data.allMarkdownRemark.edges.map(({ node }) => ( 
                             <div key={node.id} className="posts">
                             <Link to={node.fields.slug}>
                                 <h3>
+                                    <span className="log">{node.frontmatter.title}{" "}</span>
                                     <span className="date">{node.frontmatter.date}</span>
-                                    {" "}{node.frontmatter.title}                           
+                                                               
                                 </h3>                        
                                 <p>{node.excerpt}</p>
                             </Link>
@@ -171,7 +177,7 @@ export const query = graphql`
               node {
                 id
                 frontmatter {
-                  date(formatString: "")
+                  date(formatString: "MMMM DD, YYYY")
                   title
                 }
                 fields {

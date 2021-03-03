@@ -80,9 +80,13 @@ const FormContainer = styled.div`
 
     input, textarea {
         width: 400px;
-        border-radius: 10px;
+        ${'' /* border-radius: 10px; */}
+        border: transparent;
+        border-bottom: 1px solid ${colors.green};
+        outline: none;
+        color: ${colors.defaultColor};
         padding: 10px;
-        background-color: ${colors.defaultColor};
+        background-color: ${colors.darkPurple};
         font-size: 1.2rem;
 
         @media (max-width: 768px) {            
