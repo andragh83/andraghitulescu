@@ -1,8 +1,9 @@
 ---
-slug: "/log/my-first-log"
+slug: "/log/coding-log-2021-03-02"
 date: "2021-03-02"
 title: "Coding Log"
 ---
+![gatsbyConf](../images/gatsbyConf2021.jpeg)
 
 Today it's the first day of the GatsbyConf 2021! I am really excited! I built this website using Gatsby & GraphQL and it's a really neat React-based framework to work with! I really love it! Looking forward to learning new things about it today!
 

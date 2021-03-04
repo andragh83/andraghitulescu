@@ -94,6 +94,21 @@ const Container = styled.div`
         color: ${colors.green};
     }
 
+    img {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+    }
+
+    section {
+        background-color: #000;
+        color: ${colors.green};
+        border-radius: 15px;
+    }
+
+    a {
+        color: inherit;
+    }
+
 `
 
 const LogTemplate = ({ data }) => {

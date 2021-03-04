@@ -5,6 +5,7 @@ import { colors } from "../styles/colors";
 import DesktopNav from './Navigation/DesktopNav';
 import MobileNav from './Navigation/MobileNav';
 import Footer from './Footer';
+import Seo from './Seo';
 
 const NavContainer = styled.div`
     position: -webkit-sticky; /* Safari */
@@ -82,6 +83,7 @@ const NavBar = ({ children }) => {
     return(
         <div>
             {/* <MainContainer> */}
+                <Seo />
                 <NavContainer >
                     <LogoLink>
                         <div className='grow'>

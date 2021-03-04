@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: "AndraGH",
+    titleTemplate: "%s · Web Developer",
+    description: "Andra Ghitulescu Portfolio Website",
+    image: "/images/andragh.png",
+    icon: "/images/favicon.png",
+    url: "https://www.andragh.co.uk",
+    twitterUsername: "@andra.ghitulescu",    
   },
   plugins: [
     {
@@ -26,6 +32,26 @@ module.exports = {
         path: `${__dirname}/src/markdownPages`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };
