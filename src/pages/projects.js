@@ -71,8 +71,6 @@ const Projects = () => {
             }
     }
 
-    console.log('showDetails', showDetails);
-    console.log('projectClicked', projectClicked);
     let seconds = -50;
     return(
         <Layout >
