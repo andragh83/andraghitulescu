@@ -1,5 +1,5 @@
 ---
-slug: "/log/coding-log-2021-03-02"
+slug: "/log/coding-log-2021-03-03"
 date: "2021-03-03"
 title: "Coding Log"
 ---
