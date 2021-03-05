@@ -4,7 +4,6 @@ module.exports = {
     titleTemplate: "%s · Web Developer",
     description: "Andra Ghitulescu Portfolio Website",
     image: "/images/andragh.png",
-    icon: "/images/favicon.png",
     url: "https://www.andragh.co.uk",
     twitterUsername: "@andra.ghitulescu",    
   },

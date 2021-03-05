@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
 import { graphql, useStaticQuery } from 'gatsby';
+import favicon from '../images/favicon.png';
 
-const SEO = ({ title, description, image, icon, article }) => {
+const SEO = ({ title, description, image, article }) => {
     const { pathname } = useLocation();
     const { site } = useStaticQuery(query);
 
@@ -14,7 +15,6 @@ const SEO = ({ title, description, image, icon, article }) => {
         defaultDescription,
         siteUrl,
         defaultImage,
-        defaultIcon,
         twiterUsername
     } = site.siteMetadata;
 
@@ -22,7 +22,6 @@ const SEO = ({ title, description, image, icon, article }) => {
         title: title || defaultTitle,
         description: description || defaultDescription,
         image: `${image}|| ${defaultImage}`,
-        icon: `${icon}|| ${defaultIcon}`,
         url: `${siteUrl} || ${pathname}`
     }
 
@@ -52,9 +51,9 @@ const SEO = ({ title, description, image, icon, article }) => {
                 <meta name="twiter:description" content={seo.description}/>
             )}
 
-            {seo.image && <meta name="twiter:image" content={seo.image}/>}
-
-            {seo.icon} && <link rel="icon" type="image/png" href={seo.icon} sizes="32x32" />}
+            {seo.image && <meta name="twiter:image" content={seo.image}/>}            
+            
+            <link rel="shortcut icon" type="image/png" href={favicon} />
 
         </Helmet>
     );
@@ -68,7 +67,6 @@ SEO.propTypes = {
     description: PropTypes.string,
     image: PropTypes.string,
     article: PropTypes.bool,
-    icon: PropTypes.string
 }
 
 SEO.defaultProps = {
@@ -76,7 +74,6 @@ SEO.defaultProps = {
     description: null,
     image: null,
     article: false,
-    icon: null
 }
 
 const query = graphql`
@@ -89,7 +86,6 @@ const query = graphql`
                 siteUrl: url
                 defaultImage: image
                 twitterUsername
-                defaultIcon: icon
             }
         }
     }
