@@ -9,7 +9,7 @@ Today I continued to work on my new React project. As I said yesterday, I'm tryi
 <h3>The Treatwell website.</h3>
 <p>I really like it's overal design, the UI and the UX.</p>
 <p><a href='https://www.treatwell.co.uk/places/treatment-balayage/offer-type-local/in-west-london-london-uk/'>This</a> is the part I'm trying to replicate.</p>
-<p>You can check out the repo at https://github.com/andragh83/treatwell-page-replica</p>
+<p>You can check out the repo at <a href='https://github.com/andragh83/treatwell-page-replica'>https://github.com/andragh83/treatwell-page-replica</a></p>
 <p>My mini project has the following elements:</p>
 <ul>
     <li>a navbar</li>
