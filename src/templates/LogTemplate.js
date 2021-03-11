@@ -180,7 +180,7 @@ const LogTemplate = ({ data }) => {
                         <div className="rightLinks">
                             <h5>Under Construction</h5>
                                 <ul>
-                                    <li>Cool section comming soon</li>                                    
+                                    <li>Cool section coming soon</li>                                    
                                 </ul>
                         </div>   
                     </div>
