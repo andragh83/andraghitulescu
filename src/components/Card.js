@@ -19,7 +19,7 @@ const Container = styled.div`
 
     .photoDesktop {
         cursor: pointer;
-        width: 500px;
+        width: 400px;
         margin: 0px auto;
         margin-top: 10px;
         border-radius: 10px;
@@ -34,7 +34,7 @@ const Container = styled.div`
     .photoMobile {
         margin-top: -230px;
         margin-bottom: 20px;
-        margin-left: 400px;
+        margin-left: 350px;
         width: 80px;
         border: none;
         background-color: rgb(59,23,61);

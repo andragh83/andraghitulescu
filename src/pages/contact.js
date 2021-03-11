@@ -22,7 +22,7 @@ const Container = styled.div`
         margin-bottom: 20px;    
         padding: 20px;
         border: 1px solid ${colors.blue};
-        border-radius: 15px;
+        border-radius: 10px;
 
         @media (max-width: 420px) {
             margin: 20px;
@@ -36,7 +36,7 @@ const Header = styled.div`
     margin: 20px auto;
     margin-bottom: -30px;
     width: 400px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 10px;
     background-color: ${colors.darkPurple};
     z-index: 1000;
@@ -60,7 +60,7 @@ const FormContainer = styled.div`
     width: 500px;
     padding: 20px;
     padding-top: 30px;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
     
 

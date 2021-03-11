@@ -43,7 +43,6 @@ const Container = styled.div`
         height: 450px;
         z-index: 500;
         background-color:  ${colors.darkPurple};
-        border-radius: 2rem;
         padding-bottom: 0px;
 
         @media (max-width: 768px) {
@@ -73,7 +72,7 @@ const Container = styled.div`
         padding: 30px;
         padding-top: 5px;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
-        border-radius: 25px;
+        border-radius: 10px;
         margin-left: 18rem;
 
             @media (max-width: 768px) {
@@ -183,7 +182,7 @@ export const query = graphql`
                 fields {
                     slug
                   }
-                excerpt
+                excerpt                
               }
             }
           }

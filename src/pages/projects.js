@@ -11,11 +11,11 @@ const Container = styled.div`
     margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    grid-gap: 45px;
+    grid-gap: 30px;
 
     @media only screen and (max-width: 1024px) {
         grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-        grid-gap: 30px; 
+        ${'' /* grid-gap: 30px;  */}
         }
 
     @media only screen and (max-width: 768px) {
