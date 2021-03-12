@@ -93,6 +93,7 @@ const Container = styled.div`
     .logContent {
         padding: 30px;   
         padding-top: 10px;  
+        line-height: 1.7rem;
         
         @media (max-width: 420px) {
             margin: 0px; 
@@ -102,6 +103,7 @@ const Container = styled.div`
             background-color: transparent;  
             backdrop-filter: none; */}
             font-size: .8rem;
+            line-height: 1.5rem;
             }
     }
 
@@ -145,7 +147,7 @@ const Container = styled.div`
 
     img {
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -5px -5px 30px rgba(0, 0, 0, 0.5);
-        border-radius: 10px;    
+        border-radius: 10px;   
     }
 
     section {

@@ -4,9 +4,10 @@ date: "2021-03-08"
 title: "Coding Log"
 ---
 
+![log7img](../images/log7.png)
+
 Treatwell page replica - making it responsive
 
-<p>Happy women's day!</p>
 <p>Today I kept working on the Treatwell page replica project.</p>
 <p>For the most part, I've coded to make it responsive for mobile viewports. Some media queries, some javascript, some more icons and it looks good for now.</p>
 <p>I've also added the logic for getting the prefered time interval input in the collapsable form. Tomorrow I want to add the calendar picker too and finish with the date and time input so I can start working on the location input.</p>
