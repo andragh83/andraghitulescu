@@ -158,7 +158,7 @@ const Container = styled.div`
     }
 
     a {
-        color: inherit;
+        color: ${colors.blue};
     }
 
 `

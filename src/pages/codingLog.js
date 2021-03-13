@@ -126,6 +126,10 @@ const Container = styled.div`
     .date {
         font-size: 1.2rem;
     }
+
+    .excerpt {
+        margin-top: -15px;
+    }
     
 `
 
@@ -155,7 +159,7 @@ const LearnLog = ({ data }) => {
                                     <span className="date">{node.frontmatter.date}</span>
                                                                
                                 </h3>                        
-                                <p>{node.excerpt}</p>
+                                <p className="excerpt">{node.excerpt}</p>
                             </Link>
                             </div>
                         ))}

@@ -6,6 +6,10 @@ title: "Coding Log"
 
 Treatwell page replica - building a calendar picker component from scratch
 
+<p>Repo: <a href="https://github.com/andragh83/treatwell-page-replica" target="_blank"> https://github.com/andragh83/treatwell-page-replica </a> </p>
+<p>Demo: <a href="https://andragh83.github.io/treatwell-page-replica/" target="_blank"> https://andragh83.github.io/treatwell-page-replica/ </a></p>
+<p>Original <a href='https://www.treatwell.co.uk/places/treatment-balayage/offer-type-local/in-west-london-london-uk/'>Treatwell page I'm trying to replicate</a></p>
+
 <p>Today I worked all day at building a calendar picker component. Of course, I could've installed one of the many npm packages available but I thought it would be fun and also good practice.</p>
 <p>It wasn't easy, it wasn't very hard, but it was a lot of work and a lot of testing.</p>
 <p>I'm happy I've finished it in one day and that I didn't use any new dependency. It needs a little refactoring but I'll be able to use it in other projects too. I'm thinking I could turn it into an npm package. It would be an oportunity for me to learn a new skill. I saw a bunch of tutorials online on this so maybe I'll give it a try sometimes.</p>
