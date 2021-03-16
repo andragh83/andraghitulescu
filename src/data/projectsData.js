@@ -11,6 +11,8 @@ import dianaDesktop from '../images/dianaDesktop.png';
 import dianaMobile from '../images/dianaMobile.png';
 import oldProfileDesktop from '../images/oldProfileDesktop.png';
 import oldProfileMobile from '../images/oldProfileMobile.png';
+import treatwellReplica from '../images/treatwell-page-replica-sq.png';
+import treatwellReplicaMob from '../images/treatwell-page-replica-mobile.png';
 
 
 import { logos } from './logos';
@@ -54,6 +56,38 @@ const projectsArray = [
             <p>Gatsby it's awesome!</p>
         </div>,
         },
+        {
+            name: 'Treatwell page replica',
+            photoDesktop: treatwellReplica,
+            photoMobile: treatwellReplicaMob,
+            technologies : [
+                {
+                    name: 'html',
+                    icon: logos.html
+                },
+                {
+                    name: 'css',
+                    icon: logos.css
+                },
+                {
+                    name: 'javascript',
+                    icon: logos.js
+                },
+                {
+                    name: 'react',
+                    icon: logos.react
+                },
+                {
+                    name: 'redux',
+                    icon: logos.redux
+                }
+                ],
+                github: 'https://github.com/andragh83/treatwell-page-replica',
+                live: 'https://andragh83.github.io/treatwell-page-replica/',
+                text: <div>
+                    <p>Website built with React and Redux and styled with CSS-modules. It replicates the design and the functionalities of <a href = 'www.treatwell.co.uk/places/treatment-balayage'>a page of the Treatwell website</a></p>
+                </div>
+            },
     {
         name: 'Countries Quizzes',
         photoDesktop: countriesDesktop,
