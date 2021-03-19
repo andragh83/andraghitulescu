@@ -21,7 +21,7 @@ const Container = styled.div`
         cursor: pointer;
         width: 400px;
         margin: 0px auto;
-        margin-top: 10px;
+        margin-top: 10px;        
         border-radius: 10px;
         align-self: center;
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -36,7 +36,7 @@ const Container = styled.div`
         margin-bottom: 20px;
         margin-left: 350px;
         width: 80px;
-        border: none;
+        border: 1px solid ${colors.defaultColor};
         background-color: rgb(59,23,61);
         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3), -10px -10px 30px rgba(0, 0, 0, 0.5);
         border-radius: 10px;

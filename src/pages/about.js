@@ -107,6 +107,10 @@ const Container = styled.div`
             }
     }
 
+    .description a {
+        color: inherit;
+    }
+
     .teckStackSection {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
@@ -172,12 +176,14 @@ const About = () => {
                     
                     <div className="facts">
                         <div className="description">
-                        <h1>About me</h1>
-                        <p>I really really LOVE building websites. I love designing them, I love coding them and I can deploy them too (thank God for Google and StackOverflow, right?).</p>
-                        <p>I am a passionate problem-solver in search of projects that bring value to everyday life. I work hard for reaching my objectives, I'm a dedicated team-player, a fast learner and I'm always trying to broaden and enhance my skills.</p>
+                        <h1>About me</h1>                        
+                        <p>I’m Andra Ghitulescu. I’m a self-taught web developer specialized in front-end development with Javascript, ReactJs, and Gatsby and I have basic knowledge of a few back-end technologies like NodeJs, ExpressJs, and PostgreSQL.</p>
+                        <p>I have a good understanding of CSS, its layout techniques like the box model, flex-box, and CSS-grid, I have experience with styled-components and CSS-modules and I recently started learning and using SASS. I also have a passion for good design and a high interest in UX/UI best practices. </p>
                         <h3>My story in a few words</h3>
-                        <p>I learned programming in high school, with Pascal and C++, but I decided to further pursue economic studies and eventually made a career in that field.</p>
-                        <p>I restarted to code 4 years ago by taking various online web development courses which I enjoyed very much and I developed a real passion for creating websites. I’ve built various projects to enhance my web design and programming skills and currently I am confidently working with HTML, CSS and JavaScript.</p>
+                        <p>I learned programming in high school, with Pascal and C++, but I decided to further pursue economic studies and eventually made a career in that field and I've worked as a procurement specialist for the past years.</p>
+                        <p>I restarted to code 4 years ago by taking various online web development courses which I enjoyed very much and I developed a real passion for creating websites.</p> 
+                        <p>I've been coding as a side-hustle to my full-time job for the past 2 years, building small websites for friends and family. I’ve also built various personal projects to enhance my web design and programming skills. You can see my most recent ones in the <Link to='/projects'>Projects</Link> section. The rest are on my <a href="https://www.github.com/andragh83/" target="_blank" rel="noopener noreferrer">Github</a>.</p>
+                        <p>At the end of last year I moved to London and now I am trying to make a career change into a full-time web developer job.</p>
                         <h3>My skills</h3>
                         </div>
                         <div className="subSection">
