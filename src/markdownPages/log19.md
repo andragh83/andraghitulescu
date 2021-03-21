@@ -33,23 +33,23 @@ Family day today so just one coding challenge from LeetCode
 <p>My solution is bellow but it wasn't accepted because it exceeded the time limit. It passed 315 / 318 test cases. It has a high Big O because it has 4 loops and I think this is the reason it wasn't accepted.</p>
 <section>
 <p>var threeSum = function(nums) {</p>
-<p>____let result = [];</p>
-<p>____nums.map((num, index) => {</p>
-<p>________for (let i=1; i < nums.length; i++) {</p>
-<p>_____________for (let j=2; j < nums.length; j++) {</p>
-<p>__________________if (num + nums[i] + nums[j] === 0 && index !== i && index !==j && i !==j ) {</p>
-<p>___________________let outcome = [num, nums[i], nums[j]]</p>
-<p>___________________let sortOutcome = outcome.sort(function(a, b) {return a - b});</p> 
-<p>___________________let check = false; </p>
-<p>___________________result.forEach( item => { if (item[0] === sortOutcome[0] && item[1] === sortOutcome[1] && item[2] === sortOutcome[2]) {check = true}});</p>                    
-<p>______________________if (!check) {</p>
-<p>__________________________result.push(sortOutcome);</p>
-<p>_______________________}</p>
-<p>___________________}</p>
-<p>_____________}</p>
-<p> ________}</p>
-<p>_____})</p>
-<p>___return result;</p>
+<p>_let result = [];</p>
+<p>__nums.map((num, index) => {</p>
+<p>____for (let i=1; i < nums.length; i++) {</p>
+<p>_____for (let j=2; j < nums.length; j++) {</p>
+<p>_______if (num + nums[i] + nums[j] === 0 && index !== i && index !==j && i !==j ) {</p>
+<p>__________let outcome = [num, nums[i], nums[j]]</p>
+<p>__________let sortOutcome = outcome.sort(function(a, b) {return a - b});</p> 
+<p>__________let check = false; </p>
+<p>__________result.forEach( item => { if (item[0] === sortOutcome[0] && item[1] === sortOutcome[1] && item[2] === sortOutcome[2]) {check = true}});</p>                    
+<p>____________if (!check) {</p>
+<p>______________result.push(sortOutcome);</p>
+<p>____________}</p>
+<p>__________}</p>
+<p>_______}</p>
+<p> ___}</p>
+<p>___})</p>
+<p>__return result;</p>
 <p>};</p>
 </section>
 <p>Happy coding!</p>
