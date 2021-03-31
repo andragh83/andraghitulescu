@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
 import styled from 'styled-components';
@@ -130,10 +130,31 @@ const Container = styled.div`
     .excerpt {
         margin-top: -15px;
     }
+
+    .loadMorePosts {
+        margin-top: 20px;
+        padding-left: 0px;        
+        color: ${colors.defaultColor};
+        font-size: 1.5rem;
+        border: none;
+        border-bottom: 1px solid ${colors.defaultColor};
+        background-color: transparent;        
+        cursor: pointer;
+        outline: none;
+    }
     
 `
-
 const LearnLog = ({ data }) => {
+    const [nbOfPosts, setNbOfPosts] = useState(5);
+    const [showMorePosts, setShowMorePosts] = useState(true);
+
+    const loadMorePosts = () => {
+        setNbOfPosts(nbOfPosts+5);
+        if (nbOfPosts===data.allMarkdownRemark.edges.length) {
+            setShowMorePosts(false);
+        }
+    }
+
     return(
         <Layout>
             <FadeIn>
@@ -150,18 +171,22 @@ const LearnLog = ({ data }) => {
                         <div className="description">
                         <h1>Welcome to my <span className="log">Coding Log</span></h1>
                         <p>I included this section to keep track of my progress in learning web development. But I might write about other topics too.</p>
-                        {data.allMarkdownRemark.edges.map(({ node }) => ( 
-                            <div key={node.id} className="posts">
-                            <Link to={node.fields.slug}>
-                                <h3>
-                                    <span className="log">{node.frontmatter.title}{" "}</span>
-                                    <span className="date">{node.frontmatter.date}</span>
-                                                               
-                                </h3>                        
-                                <p className="excerpt">{node.excerpt}</p>
-                            </Link>
-                            </div>
+                        {data.allMarkdownRemark.edges.map(({ node }, i) => ( 
+                           i < nbOfPosts && <div key={node.id} className="posts">
+                                                <Link to={node.fields.slug}>
+                                                    <h3>
+                                                        <span className="log">{node.frontmatter.title}{" "}</span>
+                                                        <span className="date">{node.frontmatter.date}</span>
+                                                                                
+                                                    </h3>                        
+                                                    <p className="excerpt">{node.excerpt}</p>
+                                                </Link>
+                                                </div>
                         ))}
+                        {showMorePosts && <button className="loadMorePosts" onClick={loadMorePosts}>
+                                           Load more logs...
+                                         </button>
+                            }
                         </div>
                     </div>                          
                 </Container>
