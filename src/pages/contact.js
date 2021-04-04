@@ -161,15 +161,15 @@ const Contact = () => {
                             <input type="hidden" name="form-name" value="contact" />
                             <label>
                                 <p><FontAwesomeIcon icon={logos.user} size="1x"/>{"  "}Name</p>
-                                <input type="text" name="name" id="name" />
+                                <input type="text" name="name" id="name" required />
                             </label>
                             <label className="label">
                                 <p><FontAwesomeIcon icon={logos.mail} size="1x"/>{"  "}Email</p>
-                                <input type="email" name="email" id="email" />
+                                <input type="email" name="email" id="email" required/>
                             </label>                            
                             <label className="label">
                                 <p><FontAwesomeIcon icon={logos.message} size="1x"/>{"  "}Message</p>
-                                <textarea name="message" id="message" rows="5" />
+                                <textarea name="message" id="message" rows="5" required/>
                             </label>
                             <div className='formButtons'>
                                 <button className='grow' type="submit">Send</button>
