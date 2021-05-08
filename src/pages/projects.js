@@ -10,14 +10,16 @@ const Wrap = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;    
-    padding-top: 20px;
+    padding: 20px;
+    width: 100%;
 `
 
 const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 80vw;
+    width: 100%;
 
     .detailsBox {
         position: -webkit-sticky;
@@ -50,6 +52,7 @@ const Container = styled.div`
 
 const CardWrap = styled.div`
     padding-right: 30px;
+    padding-bottom: 30px;
 `
 
 const Projects = () => {

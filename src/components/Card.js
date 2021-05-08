@@ -8,14 +8,21 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3), -10px -10px 50px rgba(0, 0, 0, 0.5);
     
     @media (max-width: 1100px) {
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     }
+
+    @media (min-width: 1200px) {
+        height: 660px;
+    } 
+
+    @media (max-width: 500px) {
+        padding: 10px;
+    }   
 
     .photoDesktop {
         cursor: pointer;
@@ -53,6 +60,8 @@ const Container = styled.div`
         width: 80%;
         height: auto;
         margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
         @media (max-width: 1100px) {
             margin: 10px 10px;
             ${'' /* width: 280px; */}
@@ -82,7 +91,7 @@ const Container = styled.div`
     .buttonsSection {
         margin-top: 2rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between;        
 
         ${'' /* @media (max-width: 420px) {
             justify-content: space-between;
@@ -95,7 +104,7 @@ const Container = styled.div`
         border-radius: 10px;
         background-color: transparent;
         color: ${colors.defaultColor};
-        font-size: 1.2rem;
+        font-size: 1rem;
         cursor: pointer;
         outline: none;
         @media (max-width: 1100px) {

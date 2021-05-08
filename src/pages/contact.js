@@ -56,7 +56,7 @@ const Header = styled.div`
 
 const FormContainer = styled.div`
     ${'' /* height: 75vh; */}
-    margin: 0px auto;
+    margin: 10px auto;
     width: 500px;
     padding: 20px;
     padding-top: 30px;
@@ -151,11 +151,11 @@ const Contact = () => {
                     <Header><h3>Let's keep in touch</h3></Header>
                     {/* <FadeIn delay={100}> */}
                     <FormContainer>    
-                        <div className='contactData'>
-                            <p><FontAwesomeIcon icon={logos.mail} size="lg"/>{"  "}andra.ghitulescu [at] gmail.com</p>
-                            <p><FontAwesomeIcon icon={logos.phone} size="lg"/>{"  "}<FontAwesomeIcon icon={logos.whatsapp} size="lg"/>{"  "}+44 7725 018 339{"  "}(UK)</p>
-                            <p><FontAwesomeIcon icon={logos.phone} size="lg"/>{"  "}<FontAwesomeIcon icon={logos.whatsapp} size="lg"/>{"  "}+40 725 987 214{"  "}(RO)</p>
-                        </div>                
+                        {/* <div className='contactData'>
+                            <p><FontAwesomeIcon icon={logos.mail} size="lg"/>{"  "}</p>
+                            <p><FontAwesomeIcon icon={logos.phone} size="lg"/>{"  "}<FontAwesomeIcon icon={logos.whatsapp} size="lg"/>{"  "}{"  "}(UK)</p>
+                            <p><FontAwesomeIcon icon={logos.phone} size="lg"/>{"  "}<FontAwesomeIcon icon={logos.whatsapp} size="lg"/>{"  "}{"  "}(RO)</p>
+                        </div>                 */}
                         <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
                             <input type="hidden" name="bot-field" />
                             <input type="hidden" name="form-name" value="contact" />
