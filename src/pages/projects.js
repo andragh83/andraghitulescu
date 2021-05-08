@@ -6,26 +6,17 @@ import styled from 'styled-components';
 import projectsArray from '../data/projectsData';
 import FadeIn from 'react-fade-in';
 
+const Wrap = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+`
 
 const Container = styled.div`
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    grid-gap: 30px;
-
-    @media only screen and (max-width: 1024px) {
-        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-        ${'' /* grid-gap: 30px;  */}
-        }
-
-    @media only screen and (max-width: 768px) {
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        
-        }
-
-    @media only screen and (max-width: 420px) {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));         
-        }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 80vw;
 
     .detailsBox {
         position: -webkit-sticky;
@@ -56,6 +47,10 @@ const Container = styled.div`
     }
 `
 
+const CardWrap = styled.div`
+    padding-right: 30px;
+`
+
 const Projects = () => {
     const [showDetails, setShowDetails] = useState(false);
     const [projectClicked, setProjectClicked] = useState(undefined);
@@ -73,40 +68,44 @@ const Projects = () => {
 
     let seconds = -50;
     return(
-        <Layout >
-            <Container>
-            {projectsArray.map((project, index) => 
-                {   seconds+=100;
-                    return <FadeIn key={index} delay={seconds}>
-                                <Card                                     
-                                    photoDesktop={project.photoDesktop}
-                                    photoMobile={project.photoMobile}
-                                    name={project.name}
-                                    technologies={project.technologies}
-                                    github={project.github}
-                                    live={project.live}
-                                    onClick={() => onClick(index)}
-                                    >                                        
-                                </Card>                        
-                            </FadeIn>
-                }
-            )}
+        <Layout>
+            <Wrap>
+                <Container>
+                {projectsArray.map((project, index) => 
+                    {   seconds+=100;
+                        return <FadeIn key={index} delay={seconds}>
+                                    <CardWrap>
+                                        <Card                                     
+                                            photoDesktop={project.photoDesktop}
+                                            photoMobile={project.photoMobile}
+                                            name={project.name}
+                                            technologies={project.technologies}
+                                            github={project.github}
+                                            live={project.live}
+                                            onClick={() => onClick(index)}
+                                            >                                        
+                                        </Card>  
+                                    </CardWrap>                      
+                                </FadeIn>
+                    }
+                )}
 
-            { showDetails? 
-                <div className='detailsBox'>
-                    <Modal
-                        photo={projectsArray[projectClicked].photoDesktop}                        
-                        name={projectsArray[projectClicked].name}
-                        technologies={projectsArray[projectClicked].technologies}
-                        github={projectsArray[projectClicked].github}
-                        live={projectsArray[projectClicked].live}
-                        closeModal={onClick}
-                    >
-                        {projectsArray[projectClicked].text}
-                    </Modal>                     
-                </div> : <div></div>
-                                 }
-            </Container>
+                { showDetails? 
+                    <div className='detailsBox'>
+                        <Modal
+                            photo={projectsArray[projectClicked].photoDesktop}                        
+                            name={projectsArray[projectClicked].name}
+                            technologies={projectsArray[projectClicked].technologies}
+                            github={projectsArray[projectClicked].github}
+                            live={projectsArray[projectClicked].live}
+                            closeModal={onClick}
+                        >
+                            {projectsArray[projectClicked].text}
+                        </Modal>                     
+                    </div> : <div></div>
+                                    }
+                </Container>
+            </Wrap>
         </Layout> 
     )
 }
