@@ -9,12 +9,14 @@ import FadeIn from 'react-fade-in';
 const Wrap = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 `
 
 const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 80vw;
 
     .detailsBox {
         position: -webkit-sticky;
