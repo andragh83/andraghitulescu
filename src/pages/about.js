@@ -123,6 +123,7 @@ const Container = styled.div`
         justify-content: flex-start;        
         padding: 0px;
         padding-right: 20px;
+        padding-top: 20px
     }
 
     .logo img {
