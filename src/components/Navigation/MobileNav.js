@@ -22,7 +22,7 @@ const LinksContainer = styled.div`
     animation: 1s showMenu both;
     opacity: 0;
 
-    }
+    
 
     ul {
         list-style: none;
@@ -86,7 +86,7 @@ const Button = styled.div`
 
     @media only screen and (max-width: 420px) {
             margin-top: -10px;
-            right: 50px;
+            right: 30px;
             
         }
 

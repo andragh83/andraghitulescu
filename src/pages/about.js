@@ -13,8 +13,14 @@ import MainPhoto from '../components/MainPhoto';
 import FadeIn from 'react-fade-in';
 
 const Container = styled.div`
+    display: flex;
+    justify-content: center;`
+
+const SubContainer = styled.div`
+    max-width: 80vw;
     margin-top: 0;
-    margin: 0 5rem;
+    padding: 0 5rem;
+    
 
     @media (max-width: 1100px) {
         margin: 0 3rem;
@@ -28,6 +34,7 @@ const Container = styled.div`
 
     @media (max-width: 420px) {
         margin: 0px auto;
+        padding: 0;
         }
 
     h3, h1 {
@@ -58,8 +65,8 @@ const Container = styled.div`
         }
 
         @media (max-width: 420px) {
-                width: 90vw;
-                height: 95vw;
+                width: 80vw;
+                height: 50vh;
                 position: relative;
                 border: none;
                 top: 0px;
@@ -89,7 +96,7 @@ const Container = styled.div`
 
             @media (max-width: 420px) {
                 margin: 10px;
-                padding: 10px;
+                
                 padding-left: 10px;                
                 box-shadow: none;                
                 background-color: transparent;  
@@ -152,11 +159,14 @@ const Container = styled.div`
     }
 `
 
+
+
 const About = () => {
     return(
         <Layout>
             <FadeIn>
                 <Container>
+                <SubContainer>
                     <div className="photo">
                         <MainPhoto 
                             image={image} 
@@ -272,7 +282,8 @@ const About = () => {
                             <p>I'm a wife and a mother of two awesome boys who help me enhance my negotiation skills everyday. I enjoy spending time with my family, the sea, the mountains and illustrating in watercolor.</p>
                             <p>Feel free to drop me a line anytime. You can find my contact details <Link style={{color: "inherit"}} to="/contact">here</Link>.</p>
                         </div>
-                    </div>                
+                    </div> 
+                    </SubContainer>               
                 </Container>
             </FadeIn>
         </Layout> 

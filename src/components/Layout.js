@@ -24,7 +24,7 @@ const NavContainer = styled.div`
     justify-content: space-between;
     font-size: 1.5rem;
     font-family: 'Julius Sans One', sans-serif;
-
+    width: 80%;
     @media (max-width: 768px) {
         padding: 20px 10%;
     }

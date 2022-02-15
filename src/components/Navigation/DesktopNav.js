@@ -48,6 +48,9 @@ const LinksContainer = styled.div`
     }
 `
 
+const MenuWrapper = styled.ul`
+`
+
 const LinkList = (props) => (
     <li>
         <div className="menuLinkBg grow">
@@ -59,12 +62,12 @@ const LinkList = (props) => (
 const DesktopNav = () => {
     return(
         <LinksContainer>
-            <ul>
+            <MenuWrapper>
                 <LinkList to='/about'>About</LinkList>   
                 <LinkList to='/projects'>Projects</LinkList>
                 <LinkList to='/codingLog'>Coding Log</LinkList>
                 <LinkList to='/contact'>Contact</LinkList>
-            </ul>
+            </MenuWrapper>
             </LinksContainer> 
     )
 }

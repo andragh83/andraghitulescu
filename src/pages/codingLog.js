@@ -8,8 +8,13 @@ import MainPhoto from '../components/MainPhoto';
 import FadeIn from 'react-fade-in';
 
 const Container = styled.div`
-   margin-top: 0;
-   margin: 0 5rem;
+    display: flex;
+    justify-content: center;`
+
+const SubContainer = styled.div`
+    max-width: 80vw;
+    margin-top: 0;
+    padding: 0 5rem;
 
     @media (max-width: 1100px) {
         margin: 0 3rem;
@@ -23,6 +28,7 @@ const Container = styled.div`
 
     @media (max-width: 420px) {
         margin: 0px auto;
+        padding: 0px;
         }
 
     h1 {
@@ -53,7 +59,7 @@ const Container = styled.div`
         }
 
         @media (max-width: 420px) {
-                width: 90vw;
+                width: 80vw;
                 height: 95vw;
                 position: relative;
                 border: none;
@@ -114,8 +120,7 @@ const Container = styled.div`
         padding: 5px;
         padding-left: 0px;
         @media (max-width: 420px) {
-            font-size: 1.3rem;  
-            line-height: 1.2rem;          
+            font-size: 1.3rem;        
             }
     }
     
@@ -141,6 +146,10 @@ const Container = styled.div`
         background-color: transparent;        
         cursor: pointer;
         outline: none;
+
+        @media (max-width: 500px) {
+            font-size: 1.2rem;
+        }
     }
     
 `
@@ -159,6 +168,7 @@ const LearnLog = ({ data }) => {
         <Layout>
             <FadeIn>
                 <Container>
+                <SubContainer>
                     <div className="photo">
                         <MainPhoto 
                             image={image} 
@@ -188,7 +198,8 @@ const LearnLog = ({ data }) => {
                                          </button>
                             }
                         </div>
-                    </div>                          
+                    </div>   
+                    </SubContainer>                       
                 </Container>
             </FadeIn>  
         </Layout> 

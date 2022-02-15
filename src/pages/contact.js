@@ -160,15 +160,15 @@ const Contact = () => {
                             <input type="hidden" name="bot-field" />
                             <input type="hidden" name="form-name" value="contact" />
                             <label>
-                                <p><FontAwesomeIcon icon={logos.user} size="1x"/>{"  "}Name</p>
+                                <p><FontAwesomeIcon icon={logos.user} size="1x"/><span style={{paddingRight: '15px'}}/>Name</p>
                                 <input type="text" name="name" id="name" required />
                             </label>
                             <label className="label">
-                                <p><FontAwesomeIcon icon={logos.mail} size="1x"/>{"  "}Email</p>
+                                <p><FontAwesomeIcon icon={logos.mail} size="1x"/><span style={{paddingRight: '15px'}}/>Email</p>
                                 <input type="email" name="email" id="email" required/>
                             </label>                            
                             <label className="label">
-                                <p><FontAwesomeIcon icon={logos.message} size="1x"/>{"  "}Message</p>
+                                <p><FontAwesomeIcon icon={logos.message} size="1x"/><span style={{paddingRight: '15px'}}/>Message</p>
                                 <textarea name="message" id="message" rows="5" required/>
                             </label>
                             <div className='formButtons'>

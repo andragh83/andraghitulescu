@@ -11,14 +11,13 @@ const Wrap = styled.div`
     justify-content: center;
     align-items: center;    
     padding: 20px;
-    width: 100%;
 `
 
 const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 80vw;
+    max-width: 85vw;
     width: 100%;
 
     .detailsBox {
@@ -38,13 +37,13 @@ const Container = styled.div`
         @media only screen and (max-width: 420px) {
             bottom: 1rem;
             left: 5%;
-            width: 380px;
+            width: 350px;
         }
 
         @media only screen and (max-width: 375px) {
             bottom: 1rem;
             left: 5%;
-            width: 350px;
+            width: 320px;
         }
 
     }
@@ -53,6 +52,11 @@ const Container = styled.div`
 const CardWrap = styled.div`
     padding-right: 30px;
     padding-bottom: 30px;
+    @media only screen and (max-width: 500px) {
+            margin: 0 autol
+
+        }
+
 `
 
 const Projects = () => {

@@ -5,6 +5,7 @@ import { colors } from '../styles/colors';
 import { logos } from '../data/logos';
 
 const Container = styled.div`
+width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +38,12 @@ const Container = styled.div`
             width: 300px;
         }
 
+        @media (max-width: 500px) {
+            width: 250px;
+        }
+
     }
+
     .photoMobile {
         margin-top: -230px;
         margin-bottom: 20px;
@@ -50,6 +56,12 @@ const Container = styled.div`
         @media (max-width: 1100px) {
             width: 50px;
             margin-left: 280px;
+            margin-top: -140px;
+        }
+
+        @media (max-width: 500px) {
+            width: 50px;
+            margin-left: 240px;
             margin-top: -140px;
         }
     }
