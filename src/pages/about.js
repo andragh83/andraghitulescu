@@ -263,8 +263,8 @@ const About = () => {
                 </p>
                 <p>
                   After hundreds of applications sent, several talks with
-                  recruiters and a few interviews, I landed a job as a junior
-                  developer at the most awesome startup. Now I'm puting all my
+                  recruiters and a few interviews, I landed a job as a software
+                  engineer at the most awesome startup. Now I'm puting all my
                   time and effort into meeting my own professional expectations,
                   and the ones of the people who gave me this chance by trying
                   to create value everyday.
