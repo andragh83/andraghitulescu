@@ -225,8 +225,8 @@ const About = () => {
                 <p>
                   I’m a self-taught web developer specialized in front-end
                   development with Javascript, ReactJs with Typescript, and
-                  Gatsby. I have basic knowledge of a few back-end technologies
-                  like NodeJs, ExpressJs, and PostgreSQL.
+                  Gatsby. In terms of back-end development, I have basic
+                  knowledge of NodeJs, ExpressJs, and PostgreSQL.
                 </p>
                 <p>I also enjoy designing UI in Figma.</p>
                 <h3>My story in a few words</h3>
@@ -234,20 +234,20 @@ const About = () => {
                   I learned programming in high school, with Pascal and C++, but
                   I decided to further pursue economic studies and eventually
                   made a career in that field and I've worked as a procurement
-                  specialist for the past years.
+                  specialist for 14 years.
                 </p>
                 <p>
-                  I restarted to code 4 years ago by taking various online web
+                  I restarted to code in 2016 by taking various online web
                   development courses which I enjoyed very much and I developed
                   a real passion for creating websites.
                 </p>
                 <p>
                   I've been coding as a side-hustle to my full-time job for the
-                  past 2 years, building small websites for friends and family.
+                  since 2018, building small websites for friends and family.
                   I’ve also built various personal projects to enhance my web
-                  design and programming skills. You can see my most recent ones
-                  in the <Link to="/projects">Projects</Link> section. The rest
-                  are on my{" "}
+                  design and programming skills. You can see some of them in the{" "}
+                  <Link to="/projects">Projects</Link> section. The rest are on
+                  my{" "}
                   <a
                     href="https://www.github.com/andragh83/"
                     target="_blank"
@@ -259,7 +259,7 @@ const About = () => {
                 </p>
                 <p>
                   At the end of 2020, I moved to London and pursued my goal of
-                  working as full-time web developer job.
+                  working as full-time web developer.
                 </p>
                 <p>
                   After hundreds of applications sent, several talks with
